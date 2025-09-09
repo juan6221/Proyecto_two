@@ -1,111 +1,130 @@
-/* Estilos para la página de Inicio y sus consultas */
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #4b6cb7; /* degradado más elegante */
+  background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+  color: #fff;
+  padding: 2.5rem 0 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.Container {
+  max-width: 950px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Sección inicio */
 .inicio-section {
   background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(100, 108, 255, 0.07);
-  padding: 2rem 2.5rem;
-  margin: 2rem auto;
-  max-width: 700px;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid #eaeaea;
 }
 
 .inicio-section h1 {
-  color: #646cff;
+  color: #4b6cb7;
   margin-bottom: 1rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .inicio-section h2 {
-  color: #646cff;
+  color: #182848;
   margin-top: 2rem;
   font-size: 1.4rem;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.3rem;
+  border-left: 4px solid #4b6cb7;
+  padding-left: 0.6rem;
 }
 
 .inicio-section h3 {
-  color: #3a3a7c;
+  color: #555;
   margin-top: 1.5rem;
   font-size: 1.1rem;
 }
 
-.inicio-section p, .inicio-section ul {
-  color: #333;
+.inicio-section p, 
+.inicio-section ul {
+  color: #444;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 .inicio-section ul {
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
 }
 
 .inicio-section li {
   margin-bottom: 0.5rem;
 }
-body {
-  margin: 0;
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #61dafb 0%, #646cff 100%);
-  min-height: 100vh;
-}
 
-header {
-  background: linear-gradient(90deg, #61dafb 0%, #646cff 100%);
-  color: #fff;
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.1);
-}
-
-.Container {
-  max-width: 900px;
-  margin: 2rem auto;
-  background: rgba(255,255,255,0.9);
-  border-radius: 24px;
-  box-shadow: 0 4px 24px rgba(100, 108, 255, 0.08);
-  overflow: hidden;
-}
-
+/* Nav */
 nav {
-  background: #fff;
-  padding: 0.5rem 0;
+  background: #fafafa;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  border-bottom: 1px solid #e0e0e0;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 2rem;
-}
-nav li {
-  display: inline;
-}
-nav a {
-  color: #646cff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-nav a:hover {
-  color: #1a1a1a;
+  border-bottom: 1px solid #e5e5e5;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #4b6cb7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #182848;
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
-  background: linear-gradient(90deg, #61dafb 0%, #646cff 100% );
+  background: #182848;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  font-size: 1rem;
-  margin-top: 2rem;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  letter-spacing: 0.5px;
 }
 
+/* Imágenes */
 img {
   max-width: 100%;
   display: block;
   margin: 2rem auto;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(100, 108, 255, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
 }
