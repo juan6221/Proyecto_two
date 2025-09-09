@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <p>Todos los derechos reservados</p>
+      <p>juan jose hurtado</p>
       <p>{new Date().getFullYear}</p>
     </footer>
   );
